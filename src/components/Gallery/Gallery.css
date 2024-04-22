@@ -1,0 +1,49 @@
+.gallery {
+  border-top: 1px solid black;
+  background-color: #f8f9fa; /* Same background color as the About Us section */
+  padding: 80px 0; /* Adjust padding as needed */
+  max-height: 150vh; /* Set maximum height to 150vh */
+}
+
+.gallery__carousel {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.carousel {
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.carousel div {
+  max-height: 80vh;
+}
+
+.carousel .slide img {
+  max-width: 100%; /* Ensure images fit within the carousel */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.app__gallery-carousel {
+  max-width: 100%;
+  height: 80vh;
+}
+
+.app__gallery-carousel .slider {
+  height: 100%;
+}
+
+.app__gallery-carousel .carousel-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.app__gallery-carousel > div > div {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-root {
+  border-radius: 1rem;
+}

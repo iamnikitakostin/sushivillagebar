@@ -1,0 +1,27 @@
+/* Landing.css */
+.landing-bg {
+  background: url('../../assets/bg.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.landing-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to ensure text readability */
+  z-index: 1;
+}
+
+.landing-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+.display-4 {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
