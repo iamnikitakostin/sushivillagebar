@@ -1,0 +1,152 @@
+.navbar-custom {
+  background-color: #fff; /* Light background for a clean look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+.navbar-brand {
+  color: #d2222d; /* Red color matching the logo */
+  font-size: 1.5rem; /* Larger font size for brand name */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-brand:hover {
+  opacity: 0.8; /* Slight transparency effect on hover */
+}
+
+.navbar-brand .logo {
+  margin-right: 0.5rem; /* Spacing between logo and brand name */
+  width: 40px;
+  transition: transform 0.3s ease; /* Animation for the logo */
+}
+
+.navbar-brand:hover .logo {
+  transform: scale(1.1); /* Scale up logo on hover */
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-link.animate-link {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden; /* Ensures the pseudo-element does not overflow */
+  transition: color 0.3s ease;
+}
+
+.nav-link.animate-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #d2222d; /* Red color for the underline */
+  transform: scaleX(0); /* Start with no underline */
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-link.animate-link:hover::after, .nav-link.animate-link:focus::after {
+  transform: scaleX(1); /* Full underline on hover/focus */
+  transform-origin: left;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #d2222d; /* Red color on hover and focus */
+}
+
+.nav-item.active .nav-link {
+  color: #d2222d; /* Active link color */
+}
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.app__navbar-smallscreen .app__navbar-order {
+  font-size: 2rem;
+}
+
+.app__navbar-smallscreen .app__navbar-order a:hover {
+  border: 0;
+}
+
+.app__navbar-smallscreen .nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  transition: 0.5s ease;
+
+  flex-direction: column;
+  z-index: 5;
+}
+
+.overlay__close {
+  font-size: 27px;
+  color: var(--color-lightSilver);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.app__navbar-smallscreen_links {
+  list-style: none;
+}
+
+.app__navbar-smallscreen_links li {
+  margin: 2rem;
+  cursor: pointer;
+  color: var(--color-lightSilver);
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-base);
+}
+
+.app__navbar-smallscreen_links li:hover {
+  color: var(--color-gold)
+}
+
+
+@media (max-width: 991px) {
+  .navbar-custom {
+    padding: 1rem; /* Increased padding on smaller screens */
+  }
+} 
+
+@media screen and (max-width: 1150px) {
+  .navbar-collapse {
+      display: none;
+  }
+
+  .app__navbar-smallscreen, .app__navbar-smallscreen .app__navbar-order {
+      display: flex;
+  }
+
+  .app__navbar-booking {
+      width: 70%;
+  }
+}

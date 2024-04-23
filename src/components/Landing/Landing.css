@@ -1,0 +1,113 @@
+/* Landing.css */
+.landing-bg {
+  position: relative;
+}
+
+.landing-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to ensure text readability */
+  z-index: 1;
+}
+
+.landing-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+.display-4 {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.app__aboutUs-carousel {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+
+}
+
+.app__aboutUs-carousel .slider-wrapper {
+  margin: 0;
+}
+
+
+.app__aboutUs-carousel li {
+  list-style: none;
+}
+
+.app__aboutUs-carousel > div {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.app__aboutUs-carousel > div > div {
+  height: 100%;
+  width: 100%;
+}
+
+.app__aboutUs-carousel .slide {
+  width: 100%;
+}
+
+
+.app__aboutUs-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app__aboutUs-carousel .carousel .slider-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.app__gallery-carousel {
+  max-width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+
+.app__gallery-carousel .slider {
+  height: 100%;
+}
+
+.app__gallery-carousel .carousel-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.app__gallery-carousel li {
+  list-style: none;
+}
+
+.app__gallery-carousel > div {
+  overflow: hidden;
+}
+
+.app__gallery-carousel > div > div {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery__item {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.gallery__item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
