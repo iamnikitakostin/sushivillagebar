@@ -11,7 +11,7 @@ import image3 from "../../assets/carousel/3.jpg";
 
 function Landing() {
   return (
-    <div className="d-flex align-items-center landing-bg z-1" style={{height: "80vh"}}>
+    <div className="vh-100 d-flex align-items-center landing-bg z-1" >
       <div className="container">
         <div className="row">
           <div className="col-lg-10 mx-auto text-center">
@@ -31,7 +31,7 @@ function Landing() {
           </div>
         </div>
       </div>
-      <Carousel className="app__gallery-carousel" infiniteLoop={true} preventMovementUntilSwipeScrollTolerance={true} dynamicHeight={false} showThumbs={false} showStatus={false} autoPlay={true} showArrows={false} showIndicators={false} interval={5000}>
+      <Carousel className="app__landing-carousel" infiniteLoop={true} preventMovementUntilSwipeScrollTolerance={true} dynamicHeight={false} showThumbs={false} showStatus={false} autoPlay={true} showArrows={false} showIndicators={false} interval={5000}>
         <div className="gallery__item">
           <img src={image1} alt="restaraunt" />
         </div>

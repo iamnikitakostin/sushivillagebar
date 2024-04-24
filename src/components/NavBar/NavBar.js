@@ -22,12 +22,12 @@ function NavBar() {
               fontSize={27}
               className='overlay__close'
               onClick={() => setToggleMenu(false)}
+              color='black'
               />
             <ul className='app__navbar-smallscreen_links'>
               <li><a href='#about'  className="nav-link animate-link" onClick={() => setToggleMenu(false)}>About Us</a></li>
               <li><a href='#gallery'  className="nav-link animate-link" onClick={() => setToggleMenu(false)}>Gallery</a></li>
               <li><a href='#contact'  className="nav-link animate-link" onClick={() => setToggleMenu(false)}>Contact Us</a></li>
-              <li><a href='#gallery' className="nav-link animate-link"  onClick={() => setToggleMenu(false)}>Reservation</a></li>
             </ul>
           </div>
         )}
@@ -43,9 +43,7 @@ function NavBar() {
             <li className="nav-item">
               <a className="nav-link animate-link" href="#contact">Contact Us</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link animate-link" href="#reservation">Reservation</a>
-            </li>
+          
           </ul>
         </div>
       </div>

@@ -11,7 +11,6 @@ function AboutUs() {
             <h1 className="display-4">About Us</h1>
             <p className="lead">
               Discover Village Sushi, a cozy hole-in-the-wall run by a delightful Japanese couple.
-              With just 8 seats inside and takeout available, it's perfect for a quick lunch.
               Enjoy attentive service as they bring your order to one of the outdoor tables.
             </p>
             <p>
